@@ -8,7 +8,7 @@ OAuth.popup('spotify', {cache: true}).done(function(result) {
 
 var spotify = OAuth.create('spotify');
 var spotifyApi = new SpotifyWebApi();
-spotifyApi.setAccessToken('BQBkEMVJFFRepWhbN-EDyhMymUNp4vbPudE1BJMaPq0TGG9orFo2S0BT3LQymLeCp4-xL-_YicMbHuvX929ATS88-EGoq9ZIrZCb5hcJMzjmzn7a-WduhKWbhGwNrA90w0zS2lorm939MnqF5QcoNdYFwK_QBnfflppTNYLo2wVbImTSqyLpMzcvIxNMMWmJW7IG-MmvrpPs7-qJ3FQSMfO3A8rl11FbHLFojm4iqzKKfOwHJO-7orzr_rQdmooNMmoUAZ5NH85_ucTxdE2Qsy1hd19j9Gy3');
+spotifyApi.setAccessToken('BQCZ8XCeRbWnQVM750AT-us_sRd924BGYVXzN-oKS5PWtc0Odn…n41IBInNOUfnl8SWMHBPG6vX_uqb27cu7M-Rmf9KWaTg9jM8g');
 
 spotifyApi.getUserPlaylists()  // note that we don't pass a user id
   .then(function(data) {
