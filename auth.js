@@ -1,17 +1,20 @@
-
+var token;
 
 OAuth.initialize('fy7hrBW50VLQie5JdFTyjjeLjrw');
 OAuth.popup('spotify').done(function(result) {
-    console.log(result)
+	console.log(result);
+    token = result;
+
+
     // do some stuff with result
 })
-
+console.log(token);
 var spotifyApi = new SpotifyWebApi();
-spotifyApi.setAccessToken('<BQDFPdekt3csmqzIUhOFrfHKiVDiZ7CrY173e89SVaFOAPBEASSl7n_otDK_yotZglTPEcpprId0S87l9bRAKD6TL1wUM8vEfcJUkZ6TGCV5oGc8x-ZN45A2ZS4ZAdDCOluUPd26mAKv>');
+spotifyApi.setAccessToken(token.access_token);
 
-spotifyApi.searchTracks('Love')
+spotifyApi.getUserPlaylists()  // note that we don't pass a user id
   .then(function(data) {
-    console.log('Search by "Love"', data);
+    console.log('User playlists', data);
   }, function(err) {
     console.error(err);
   });
