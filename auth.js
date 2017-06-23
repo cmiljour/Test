@@ -8,9 +8,9 @@ OAuth.popup('spotify').done(function(result) {
 
 // var spotify = OAuth.create('spotify');
 // var spotifyApi = new SpotifyWebApi();
-// spotifyApi.setAccessToken('BQCZ8XCeRbWnQVM750AT-us_sRd924BGYVXzN-oKS5PWtc0Odn…n41IBInNOUfnl8SWMHBPG6vX_uqb27cu7M-Rmf9KWaTg9jM8g');
+// spotifyApi.setAccessToken('BQBXnIYrCI1BgeqZon1SgMex-qjsLLXKu0PrCNRjQdhNHY3zlE…Csb2jxEC_7iQb-IuZo8NvbjRsC5wzG2kvBmQL_gZLEmz6WDpG');
 
-// spotifyApi.getUserPlaylists()  // note that we don't pass a user id
+// spotifyApi.getUserPlaylists('jmperezperez')
 //   .then(function(data) {
 //     console.log('User playlists', data);
 //   }, function(err) {
