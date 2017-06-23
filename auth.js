@@ -3,6 +3,9 @@
 OAuth.initialize('fy7hrBW50VLQie5JdFTyjjeLjrw');
 OAuth.popup('spotify').done(function(result) {
     console.log(result);
+    result.get(api.spotify.com/v1/browse/featured-playlists).done(function(data){
+    	console.log(data);
+    });
 });
 
 
